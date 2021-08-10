@@ -212,13 +212,13 @@ div.ac-wrap {
 
 html {
   body {
-    // background: linear-gradient(0deg, rgba(var(--primary-rgb),0.075) 0%, rgba(var(--primary-rgb),0.075) 100%),
-    // linear-gradient(0deg, var(--secondary) 100%, var(--secondary) 100%);
+    background: linear-gradient(0deg, rgba(var(--primary-rgb),0.075) 0%, rgba(var(--primary-rgb),0.075) 100%),
+    linear-gradient(0deg, var(--secondary) 100%, var(--secondary) 100%);
     // background-image: url("../i/light-backdrop.webp");
-    background: var(
-    --gf-primary-very-low-or-primary-low,
-    $primary-very-low
-  );
+  //   background: var(
+  //   --gf-primary-very-low-or-primary-low,
+  //   $primary-very-low
+  // );
   @if $no-background-image == "false" {
     @if $background-image != "default" {
       // Thanks @tmoko!

@@ -2,6 +2,7 @@
   "about_url": null,
   "license_url": null,
   "assets": {
+    "default-background": "assets/sayagata-400px.png"
   },
   "modifiers": {
     "serialize_topic_excerpts": true
