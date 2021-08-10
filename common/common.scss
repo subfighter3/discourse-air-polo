@@ -223,8 +223,6 @@ html {
     @if $background-image != "default" {
       // Thanks @tmoko!
       background-image: url($background-image);
-      background-position: top center;
-      background-attachment: fixed;
     } @else {
       // Default background pattern from Toptal Subtle Patterns
       // ♡ https://www.toptal.com/designers/subtlepatterns/japanese-sayagata/
@@ -233,9 +231,10 @@ html {
     @if $tile-background == "true" {
       background-size: auto;
     } @else {
-      background-position: center center;
+      background-position: top center;
       background-repeat: no-repeat;
       background-size: cover;
+      background-attachment: fixed;
     }
   }
   }
