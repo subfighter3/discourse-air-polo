@@ -240,7 +240,10 @@ html {
     width: 100vw;
     // background: linear-gradient(90deg, var(--tertiary-hover) 0%, var(--tertiary) 100%);
     clip-path: ellipse(148% 70% at 91% -14%);
+
     @if $no-background-image == "false" {
+      background-blend-mode: hard-light;
+
       @if $tile-background == "true" {
         background-size: auto;
       } @else {
@@ -262,8 +265,12 @@ html {
               var(--tertiary-hover) 0%,
               var(--tertiary) 100%
             );
-          background-blend-mode: hard-light;
         }
+      }
+    } @else {
+      .background-container {
+        background-image: url($default-light-background),
+          linear-gradient(90deg, var(--tertiary-hover) 0%, var(--tertiary) 100%);
       }
     }
     @if $dark_background_image != "default" {
@@ -275,8 +282,12 @@ html {
               var(--tertiary-hover) 0%,
               var(--tertiary) 100%
             );
-          background-blend-mode: hard-light;
         }
+      }
+    } @else {
+      .background-container {
+        background-image: url($default-dark-background),
+          linear-gradient(90deg, var(--tertiary-hover) 0%, var(--tertiary) 100%);
       }
     }
   }
