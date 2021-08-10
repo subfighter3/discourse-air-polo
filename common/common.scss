@@ -211,7 +211,7 @@ div.ac-wrap {
 html {
   body {
     background: linear-gradient(0deg, rgba(var(--primary-rgb),0.075) 0%, rgba(var(--primary-rgb),0.075) 100%),
-    linear-gradient(0deg, var(--secondary) 100%, var(--secondary) 100%);
+    linear-gradient(0deg, var(--secondary) 100%, var(--secondary) 100%), url("../i/light-backdrop.webp");
   }
   .background-container {
     position: fixed;

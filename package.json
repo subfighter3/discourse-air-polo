@@ -1,5 +1,5 @@
 {
-  "author": "Jordan Vidrine",
+  "author": "Pyetro (Originally Jordan Vidrine)",
   "license": "MIT",
   "devDependencies": {
     "eslint-config-discourse": "latest"
