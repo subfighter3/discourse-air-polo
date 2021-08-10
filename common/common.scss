@@ -223,6 +223,8 @@ html {
     @if $background-image != "default" {
       // Thanks @tmoko!
       background-image: url($background-image);
+      background-position: top center;
+      background-attachment: fixed;
     } @else {
       // Default background pattern from Toptal Subtle Patterns
       // ♡ https://www.toptal.com/designers/subtlepatterns/japanese-sayagata/
@@ -245,6 +247,7 @@ html {
     width: 100vw;
     background: linear-gradient(90deg, var(--tertiary-hover) 0%, var(--tertiary) 100%); 
     clip-path: ellipse(148% 70% at 91% -14%);
+    opacity: 0.85;
   }
 }
 
