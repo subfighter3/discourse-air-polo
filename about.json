@@ -8,7 +8,7 @@
   },
   "name": "Air Polo Theme",
   "color_schemes": {
-    "air-light": {
+    "air-polo-light": {
       "primary": "1c1c1c",
       "secondary": "F9FCFF",
       "tertiary": "9a5cfd",
@@ -20,7 +20,7 @@
       "success": "71BD9F",
       "love": "C16AD7"
     },
-    "air-dark": {
+    "air-polo-dark": {
       "primary": "E0E0E0",
       "secondary": "2D2D2D",
       "tertiary": "9A5CFD",
