@@ -1,3 +1,5 @@
+@import "common/foundation/variables";
+
 // custom search banner customizations
 .custom-search-banner-wrap {
   margin: 0 auto !important;
@@ -210,9 +212,30 @@ div.ac-wrap {
 
 html {
   body {
-    background: linear-gradient(0deg, rgba(var(--primary-rgb),0.075) 0%, rgba(var(--primary-rgb),0.075) 100%),
-    linear-gradient(0deg, var(--secondary) 100%, var(--secondary) 100%);
-    background-image: url("../i/light-backdrop.webp");
+    // background: linear-gradient(0deg, rgba(var(--primary-rgb),0.075) 0%, rgba(var(--primary-rgb),0.075) 100%),
+    // linear-gradient(0deg, var(--secondary) 100%, var(--secondary) 100%);
+    // background-image: url("../i/light-backdrop.webp");
+    background: var(
+    --gf-primary-very-low-or-primary-low,
+    $primary-very-low
+  );
+  @if $no-background-image == "false" {
+    @if $background-image != "default" {
+      // Thanks @tmoko!
+      background-image: url($background-image);
+    } @else {
+      // Default background pattern from Toptal Subtle Patterns
+      // ♡ https://www.toptal.com/designers/subtlepatterns/japanese-sayagata/
+      background-image: url($default-background);
+    }
+    @if $tile-background == "true" {
+      background-size: auto;
+    } @else {
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
   }
   .background-container {
     position: fixed;
