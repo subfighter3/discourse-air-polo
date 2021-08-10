@@ -231,10 +231,10 @@ html {
     @if $tile-background == "true" {
       background-size: auto;
     } @else {
-      background-position: top center;
+      background-position: center center;
       background-repeat: no-repeat;
       background-size: cover;
-      background-attachment: fixed;
+      // background-attachment: fixed;
     }
   }
   }
@@ -244,9 +244,12 @@ html {
     left: 0;
     height: 100vh;
     width: 100vw;
-    background: linear-gradient(90deg, var(--tertiary-hover) 0%, var(--tertiary) 100%); 
+    // background: linear-gradient(90deg, var(--tertiary-hover) 0%, var(--tertiary) 100%); 
     clip-path: ellipse(148% 70% at 91% -14%);
-    opacity: 0.85;
+    background-image: url(https://pyet.ro/poloverse/assets/light-backdrop.webp), linear-gradient(
+90deg
+, var(--tertiary-hover) 0%, var(--tertiary) 100%);
+    background-blend-mode: hard-light;
   }
 }
 
