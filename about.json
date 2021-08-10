@@ -2,7 +2,8 @@
   "about_url": null,
   "license_url": null,
   "assets": {
-    "default-background": "assets/sayagata-400px.png"
+    "default-light-background": "assets/light-backdrop.webp",
+    "default-dark-background": "assets/dark-backdrop.webp"
   },
   "modifiers": {
     "serialize_topic_excerpts": true

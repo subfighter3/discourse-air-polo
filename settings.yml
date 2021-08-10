@@ -1,4 +1,9 @@
-background_image:
+light_background_image:
+  type: string
+  default: default
+  description: Enter image url
+
+dark_background_image:
   type: string
   default: default
   description: Enter image url
