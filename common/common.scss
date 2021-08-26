@@ -579,16 +579,11 @@ th.num.views {
  */
 
 .custom-search-banner-wrap h1,
-.custom-search-banner-wrap p {
-  display: none;
-}
-
-/* Inline #24 | https://poloverse.net/ */
-
+.custom-search-banner-wrap p,
 .custom-category-boxes
   .category-box
   .category-box-inner
   .category-logo.no-logo-present
   .category-abbreviation {
-  display: none;
+  display: none !important;
 }
