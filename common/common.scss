@@ -587,3 +587,12 @@ th.num.views {
   .category-abbreviation {
   display: none !important;
 }
+
+.category-calendar .calendar {
+  height: auto;
+}
+
+.calendar.fc-unthemed .fc-scroller {
+  height: auto;
+  overflow: hidden;
+}
