@@ -593,6 +593,6 @@ th.num.views {
 }
 
 .calendar.fc-unthemed .fc-scroller {
-  height: auto;
-  overflow: hidden;
+  height: auto !important;
+  overflow: hidden !important;
 }
