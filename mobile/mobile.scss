@@ -110,17 +110,55 @@ ol.category-breadcrumb {
 
 /**
  *
- * CUSTOM STYLES
+ * CUSTOM PMs STYLES
  *
  */
 
-// reset spacing within PMs
+// reset spacing and border radius
 .archetype-private_message .topic-post {
   margin: 0 !important;
 }
 
-// reset last-child bottom margin of PM bubbles
+.archetype-private_message .topic-post article {
+  padding: 0;
+}
+
+.archetype-private_message .topic-body .cooked {
+  padding: 1em;
+  border-top-left-radius: 0.5em;
+}
+
+.archetype-private_message .topic-post article {
+  padding: 0 0 1.5em 0;
+}
+
+.archetype-private_message .topic-map {
+  padding: 0.5em;
+}
+
+// smaller avatar pic
+.archetype-private_message img.avatar {
+  width: 30px;
+  height: 30px;
+}
+
+.archetype-private_message .topic-meta-data {
+  margin-left: 35px;
+}
+
+/**
+*
+* CUSTOM GLOBAL STYLES
+*
+*/
+
+// reset bubbles last P bottom margin
 .cooked > *:last-child,
 .d-editor-preview > *:last-child {
   margin-bottom: 0;
+}
+
+//changing bubbles border radius
+.topic-post article {
+  --border-radius: 1.25em;
 }
