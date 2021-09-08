@@ -192,7 +192,7 @@ ol.category-breadcrumb {
 }
 
 .category-logo:not(.no-logo-present) + .category-details {
-  word-break: break-all;
+  word-break: break-word;
 }
 
 .custom-category-boxes:not(.above-discovery-categories-outlet) .category-box {
