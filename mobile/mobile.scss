@@ -181,10 +181,14 @@ ol.category-breadcrumb {
   align-self: center;
 }
 
+.custom-category-boxes .category-box .category-box-inner .category-details {
+  padding: 1em 0.5em;
+}
+
 .category-logo:not(.no-logo-present) + .category-details {
   max-height: unset;
   height: unset;
-  padding: unset !important;
+  padding: 1em 0.5em !important;
 }
 
 .category-logo:not(.no-logo-present) + .category-details {
@@ -193,8 +197,4 @@ ol.category-breadcrumb {
 
 .custom-category-boxes:not(.above-discovery-categories-outlet) .category-box {
   max-height: unset;
-}
-
-.custom-category-boxes .category-box .category-box-inner .category-details {
-  padding: 0.5em;
 }
