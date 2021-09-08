@@ -564,10 +564,10 @@ th.num.views {
 }
 
 /**
- *
- * CUSTOM CODE
- *
- */
+*
+* CUSTOM GLOBAL STYLES
+*
+*/
 
 .custom-search-banner-wrap h1,
 .custom-search-banner-wrap p,
@@ -586,4 +586,51 @@ th.num.views {
 .calendar.fc-unthemed .fc-scroller {
   height: auto !important;
   overflow: hidden !important;
+}
+
+// reset bubbles last P bottom margin
+.cooked > *:last-child,
+.d-editor-preview > *:last-child {
+  margin-bottom: 0;
+}
+
+//changing bubbles border radius
+.topic-post article {
+  --border-radius: 1.25em;
+}
+
+// root categories box
+.custom-category-boxes:not(.above-discovery-categories-outlet)
+  .category-box
+  .category-box-inner
+  .category-logo {
+  display: inline-flex;
+  width: 100px;
+  height: 100%;
+}
+
+.custom-category-boxes:not(.above-discovery-categories-outlet)
+  .category-box
+  .category-box-inner
+  .category-logo
+  .logo.aspect-image {
+  align-self: center;
+}
+
+.custom-category-boxes .category-box .category-box-inner .category-details {
+  padding: 1em 0.5em;
+}
+
+.category-logo:not(.no-logo-present) + .category-details {
+  max-height: unset;
+  height: unset;
+  padding: 1em 0.5em !important;
+}
+
+.category-logo:not(.no-logo-present) + .category-details {
+  word-break: break-word;
+}
+
+.custom-category-boxes:not(.above-discovery-categories-outlet) .category-box {
+  max-height: unset;
 }
