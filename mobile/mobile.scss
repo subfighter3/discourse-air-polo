@@ -162,3 +162,39 @@ ol.category-breadcrumb {
 .topic-post article {
   --border-radius: 1.25em;
 }
+
+// root categories box
+.custom-category-boxes:not(.above-discovery-categories-outlet)
+  .category-box
+  .category-box-inner
+  .category-logo {
+  display: inline-flex;
+  width: 100px;
+  height: 100%;
+}
+
+.custom-category-boxes:not(.above-discovery-categories-outlet)
+  .category-box
+  .category-box-inner
+  .category-logo
+  .logo.aspect-image {
+  align-self: center;
+}
+
+.category-logo:not(.no-logo-present) + .category-details {
+  max-height: unset;
+  height: unset;
+  padding: unset !important;
+}
+
+.category-logo:not(.no-logo-present) + .category-details {
+  word-break: break-all;
+}
+
+.custom-category-boxes:not(.above-discovery-categories-outlet) .category-box {
+  max-height: unset;
+}
+
+.custom-category-boxes .category-box .category-box-inner .category-details {
+  padding: 0.5em;
+}
