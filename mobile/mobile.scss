@@ -164,3 +164,12 @@ ol.category-breadcrumb {
 .custom-search-banner-wrap {
   padding: 1.5em 8px;
 }
+
+// disable max 2 lines of text for cat descriptions
+.custom-category-boxes .description {
+  overflow: unset;
+  text-overflow: unset;
+  display: initial;
+  -webkit-line-clamp: unset;
+  -webkit-box-orient: unset;
+}
