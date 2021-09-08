@@ -643,6 +643,12 @@ html body.navigation-categories #main-outlet {
   height: 100%;
 }
 
+// cat. nav. alignment
+.categories-list .navigation-container {
+  border-bottom: 0;
+  align-items: flex-start;
+}
+
 /**
  *
  * CUSTOM PMs STYLES
