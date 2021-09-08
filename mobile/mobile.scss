@@ -114,6 +114,13 @@ ol.category-breadcrumb {
  *
  */
 
+// reset spacing within PMs
 .archetype-private_message .topic-post {
   margin: 0 !important;
+}
+
+// reset last-child bottom margin of PM bubbles
+.cooked > *:last-child,
+.d-editor-preview > *:last-child {
+  margin-bottom: 0;
 }
