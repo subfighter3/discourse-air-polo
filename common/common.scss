@@ -570,7 +570,7 @@ th.num.views {
 */
 
 // adjusts margin main content body
-html body #main-outlet {
+html body.navigation-categories #main-outlet {
   margin-top: unset;
 }
 
