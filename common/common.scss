@@ -638,6 +638,11 @@ html body.navigation-categories #main-outlet {
   max-height: unset;
 }
 
+// subcats thumb dimensions
+#header-list-area .custom-category-boxes .category-box-inner .category-logo {
+  height: 100%;
+}
+
 /**
  *
  * CUSTOM PMs STYLES
