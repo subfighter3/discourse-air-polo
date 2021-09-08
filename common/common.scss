@@ -597,12 +597,6 @@ html body #main-outlet {
   overflow: hidden !important;
 }
 
-// reset bubbles last P bottom margin
-.cooked > *:last-child,
-.d-editor-preview > *:last-child {
-  margin-bottom: 0;
-}
-
 //changing bubbles border radius
 .topic-post article {
   --border-radius: 1.25em;
@@ -642,4 +636,18 @@ html body #main-outlet {
 
 .custom-category-boxes:not(.above-discovery-categories-outlet) .category-box {
   max-height: unset;
+}
+
+/**
+ *
+ * CUSTOM PMs STYLES
+ *
+ */
+
+//change bubbles colour
+.archetype-private_message
+  .current-user-post:not(.moderator)
+  .topic-body
+  .cooked {
+  background: var(--tertiary-medium);
 }

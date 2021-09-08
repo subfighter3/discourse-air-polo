@@ -117,6 +117,12 @@ ol.category-breadcrumb {
  *
  */
 
+// reset bubbles last P bottom margin
+.cooked > *:last-child,
+.d-editor-preview > *:last-child {
+  margin-bottom: 0;
+}
+
 // reset spacing and border radius
 .archetype-private_message .topic-post {
   margin: 0 !important;
