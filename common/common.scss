@@ -649,14 +649,19 @@ html body.navigation-categories #main-outlet {
   align-items: flex-start;
 }
 
-// force max 2 lines of text for cat descriptions
-.custom-category-boxes .description {
-  overflow: hidden;
-  text-overflow: ellipsis;
-  display: -webkit-box;
-  -webkit-line-clamp: 2;
-  -webkit-box-orient: vertical;
+// disable height limit for main cats.
+.custom-category-boxes:not(.above-discovery-categories-outlet) .description {
+  max-height: unset;
 }
+
+// force max 2 lines of text for cat descriptions
+// .custom-category-boxes .description {
+//   overflow: hidden;
+//   text-overflow: ellipsis;
+//   display: -webkit-box;
+//   -webkit-line-clamp: 2;
+//   -webkit-box-orient: vertical;
+// }
 
 /**
  *
