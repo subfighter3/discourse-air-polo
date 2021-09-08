@@ -569,6 +569,15 @@ th.num.views {
 *
 */
 
+// adjusts margin main content body
+html body #main-outlet {
+  margin-top: unset;
+}
+
+.custom-search-banner-wrap {
+  padding-bottom: 1em;
+}
+
 .custom-search-banner-wrap h1,
 .custom-search-banner-wrap p,
 .custom-category-boxes
