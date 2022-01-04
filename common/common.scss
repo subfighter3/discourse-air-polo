@@ -663,7 +663,11 @@ html body.navigation-categories #main-outlet {
 }
 
 // disable background on search results page
-html body.search-page #main-outlet {
+.search-page .background-container {
+  background-image: unset;
+}
+
+html body.search-page #main #main-outlet {
   background-color: var(--secondary);
 }
 
