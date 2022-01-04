@@ -662,6 +662,11 @@ html body.navigation-categories #main-outlet {
   -webkit-box-orient: vertical;
 }
 
+// disable background on search results page
+.background-container {
+  background-image: unset;
+}
+
 /**
  *
  * CUSTOM PMs STYLES
