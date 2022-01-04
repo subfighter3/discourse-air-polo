@@ -173,3 +173,7 @@ ol.category-breadcrumb {
   -webkit-line-clamp: unset;
   -webkit-box-orient: unset;
 }
+
+.container.posts {
+  grid-template-columns: 1fr;
+}
