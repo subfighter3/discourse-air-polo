@@ -12,14 +12,14 @@ html
   body:not(.static-privacy):not(.about-page):not(.static-faq):not(.badges-page):not(.tags-page):not(.archetype-regular):not(.archetype-private_message):not(.admin-interface):not(.edit-category):not(.user-summary-page):not(.user-activity-page):not(.user-invites-page):not(.user-preferences-page)
   #main-outlet {
   width: calc(100% - 1em);
-  padding: 0em 0.5em 1em 0.5em;
+  padding: 1em 0.5em
   box-shadow: none;
   background-color: transparent;
 }
 
-.container.posts {
-  grid-template-columns: 50% 50%;
-}
+// .container.posts {
+//   grid-template-columns: 50% 50%;
+// }
 
 html body.static-privacy #main-outlet,
 html body.about-page #main-outlet,
@@ -174,9 +174,6 @@ ol.category-breadcrumb {
   -webkit-box-orient: unset;
 }
 
-.container.posts {
-  grid-template-columns: 1fr;
-}
 
 .user-main .about.collapsed-info .details {
   background: unset;
@@ -188,6 +185,3 @@ ol.category-breadcrumb {
   background-image: unset;
 }
 
-html body.user-notifications-page #main #main-outlet {
-  padding: 1em 0.5em;
-}
