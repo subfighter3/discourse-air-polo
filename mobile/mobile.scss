@@ -187,3 +187,7 @@ ol.category-breadcrumb {
 .search-page .background-container {
   background-image: unset;
 }
+
+html body.user-notifications-page #main-outlet {
+  padding: 1em 0.5em;
+}
