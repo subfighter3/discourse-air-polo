@@ -12,7 +12,7 @@ html
   body:not(.static-privacy):not(.about-page):not(.static-faq):not(.badges-page):not(.tags-page):not(.archetype-regular):not(.archetype-private_message):not(.admin-interface):not(.edit-category):not(.user-summary-page):not(.user-activity-page):not(.user-invites-page):not(.user-preferences-page)
   #main-outlet {
   width: calc(100% - 1em);
-  padding: 1em 0.5em
+  padding: 1em 0.5em;
   box-shadow: none;
   background-color: transparent;
 }
@@ -135,6 +135,14 @@ ol.category-breadcrumb {
 .archetype-private_message .topic-body .cooked {
   padding: 1em;
   border-top-left-radius: 0.5em;
+  border-color: var(--primary-high);
+}
+
+.archetype-private_message
+  .current-user-post:not(.moderator)
+  .topic-body
+  .cooked {
+  background: var(--quaternary-low);
 }
 
 .archetype-private_message .topic-post article {
@@ -174,7 +182,6 @@ ol.category-breadcrumb {
   -webkit-box-orient: unset;
 }
 
-
 .user-main .about.collapsed-info .details {
   background: unset;
 }
@@ -184,4 +191,3 @@ ol.category-breadcrumb {
 .search-page .background-container {
   background-image: unset;
 }
-
