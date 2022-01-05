@@ -177,3 +177,13 @@ ol.category-breadcrumb {
 .container.posts {
   grid-template-columns: 1fr;
 }
+
+.user-main .about.collapsed-info .details {
+  background: unset;
+}
+
+// disable background on search results page
+.user-notifications-page .background-container,
+.search-page .background-container {
+  background-image: unset;
+}
