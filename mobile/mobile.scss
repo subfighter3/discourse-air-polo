@@ -191,3 +191,8 @@ ol.category-breadcrumb {
 .search-page .background-container {
   background-image: unset;
 }
+
+// fixes img max-width
+.container.posts > .row {
+  max-width: calc(100vw - 3rem);
+}
