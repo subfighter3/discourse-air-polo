@@ -299,30 +299,30 @@ ol.category-breadcrumb {
 *
 */
 
-.custom-search-banner-wrap {
-	padding: 1.5em 8px;
-}
+// .custom-search-banner-wrap {
+// 	padding: 1.5em 8px;
+// }
 
-// disable max 2 lines of text for cat descriptions
-.custom-category-boxes .description {
-	overflow: unset;
-	text-overflow: unset;
-	display: initial;
-	-webkit-line-clamp: unset;
-	-webkit-box-orient: unset;
-}
+// // disable max 2 lines of text for cat descriptions
+// .custom-category-boxes .description {
+// 	overflow: unset;
+// 	text-overflow: unset;
+// 	display: initial;
+// 	-webkit-line-clamp: unset;
+// 	-webkit-box-orient: unset;
+// }
 
-.user-main .about.collapsed-info .details {
-	background: unset;
-}
+// .user-main .about.collapsed-info .details {
+// 	background: unset;
+// }
 
-// disable background on search results page
-.user-notifications-page .background-container,
-.search-page .background-container {
-	background-image: unset;
-}
+// // disable background on search results page
+// .user-notifications-page .background-container,
+// .search-page .background-container {
+// 	background-image: unset;
+// }
 
-// fixes img max-width
-.container.posts > .row {
-	max-width: calc(100vw - 3rem);
-}
+// // fixes img max-width
+// .container.posts > .row {
+// 	max-width: calc(100vw - 3rem);
+// }
