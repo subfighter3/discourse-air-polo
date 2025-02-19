@@ -29,7 +29,7 @@ $default-background-image: dark-light-choose(
 	}
 }
 
-$nav-pills-hover: dark-light-choose(var(--primary), var(--secondary));
+$nav-pills-hover: dark-light-choose(var(--secondary), var(--primary));
 
 :root {
 	--d-nav-color--hover: $nav-pills-hover;
