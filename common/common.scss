@@ -326,54 +326,6 @@ html {
 	// 	}
 	// }
 
-	// @media (prefers-color-scheme: light) {
-	// 	@if $no-background-image == "false" {
-	// 		@if $light_background_image != "default" {
-	// 			.background-container {
-	// 				background-image: url($light_background_image),
-	// 					linear-gradient(
-	// 						90deg,
-	// 						var(--tertiary-hover) 0%,
-	// 						var(--tertiary) 100%
-	// 					);
-	// 			}
-	// 		} @else {
-	// 			.background-container {
-	// 				background-image: url($default-light-background),
-	// 					linear-gradient(
-	// 						90deg,
-	// 						var(--tertiary-hover) 0%,
-	// 						var(--tertiary) 100%
-	// 					);
-	// 			}
-	// 		}
-	// 	}
-	// }
-
-	// @media (prefers-color-scheme: dark) {
-	// 	@if $no-background-image == "false" {
-	// 		@if $dark_background_image != "default" {
-	// 			.background-container {
-	// 				background-image: url($dark_background_image),
-	// 					linear-gradient(
-	// 						90deg,
-	// 						var(--tertiary-hover) 0%,
-	// 						var(--tertiary) 100%
-	// 					);
-	// 			}
-	// 		} @else {
-	// 			.background-container {
-	// 				background-image: url($default-dark-background),
-	// 					linear-gradient(
-	// 						90deg,
-	// 						var(--tertiary-hover) 0%,
-	// 						var(--tertiary) 100%
-	// 					);
-	// 			}
-	// 		}
-	// 	}
-	// }
-
 	body.no-ember .background-container {
 		display: none;
 	}
