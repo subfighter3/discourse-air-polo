@@ -32,5 +32,5 @@ $default-background-image: dark-light-choose(
 $nav-pills-hover: dark-light-choose(var(--primary), var(--secondary));
 
 :root {
-	--d-nav-color--hover: $nav-pills-hover;
+	--d-nav-color--hover: $nav-pills-hover !important;
 }

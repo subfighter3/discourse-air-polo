@@ -322,7 +322,7 @@ ol.category-breadcrumb {
 // 	background-image: unset;
 // }
 
-// // fixes img max-width
-// .container.posts > .row {
-// 	max-width: calc(100vw - 3rem);
-// }
+// fixes img max-width
+.container.posts > .row {
+	max-width: calc(100vw - 3rem);
+}
