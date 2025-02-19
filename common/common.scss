@@ -295,53 +295,84 @@ html {
 		}
 	}
 
-	@media (prefers-color-scheme: light) {
-		@if $no-background-image == "false" {
-			@if $light_background_image != "default" {
-				.background-container {
-					background-image: url($light_background_image),
-						linear-gradient(
-							90deg,
-							var(--tertiary-hover) 0%,
-							var(--tertiary) 100%
-						);
-				}
-			} @else {
-				.background-container {
-					background-image: url($default-light-background),
-						linear-gradient(
-							90deg,
-							var(--tertiary-hover) 0%,
-							var(--tertiary) 100%
-						);
-				}
+	$background-image: dark-light-choose(
+		$light_background_image,
+		$dark_background_image
+	);
+	$default-background-image: dark-light-choose(
+		$default-light-background,
+		$default-dark-background
+	);
+
+	@if $no-background-image == "false" {
+		@if $light_background_image != "default" {
+			.background-container {
+				background-image: url($background-image),
+					linear-gradient(
+						90deg,
+						var(--tertiary-hover) 0%,
+						var(--tertiary) 100%
+					);
+			}
+		} @else {
+			.background-container {
+				background-image: url($default-background-image),
+					linear-gradient(
+						90deg,
+						var(--tertiary-hover) 0%,
+						var(--tertiary) 100%
+					);
 			}
 		}
 	}
 
-	@media (prefers-color-scheme: dark) {
-		@if $no-background-image == "false" {
-			@if $dark_background_image != "default" {
-				.background-container {
-					background-image: url($dark_background_image),
-						linear-gradient(
-							90deg,
-							var(--tertiary-hover) 0%,
-							var(--tertiary) 100%
-						);
-				}
-			} @else {
-				.background-container {
-					background-image: url($default-dark-background),
-						linear-gradient(
-							90deg,
-							var(--tertiary-hover) 0%,
-							var(--tertiary) 100%
-						);
-				}
-			}
-		}
-	}
+	// @media (prefers-color-scheme: light) {
+	// 	@if $no-background-image == "false" {
+	// 		@if $light_background_image != "default" {
+	// 			.background-container {
+	// 				background-image: url($light_background_image),
+	// 					linear-gradient(
+	// 						90deg,
+	// 						var(--tertiary-hover) 0%,
+	// 						var(--tertiary) 100%
+	// 					);
+	// 			}
+	// 		} @else {
+	// 			.background-container {
+	// 				background-image: url($default-light-background),
+	// 					linear-gradient(
+	// 						90deg,
+	// 						var(--tertiary-hover) 0%,
+	// 						var(--tertiary) 100%
+	// 					);
+	// 			}
+	// 		}
+	// 	}
+	// }
+
+	// @media (prefers-color-scheme: dark) {
+	// 	@if $no-background-image == "false" {
+	// 		@if $dark_background_image != "default" {
+	// 			.background-container {
+	// 				background-image: url($dark_background_image),
+	// 					linear-gradient(
+	// 						90deg,
+	// 						var(--tertiary-hover) 0%,
+	// 						var(--tertiary) 100%
+	// 					);
+	// 			}
+	// 		} @else {
+	// 			.background-container {
+	// 				background-image: url($default-dark-background),
+	// 					linear-gradient(
+	// 						90deg,
+	// 						var(--tertiary-hover) 0%,
+	// 						var(--tertiary) 100%
+	// 					);
+	// 			}
+	// 		}
+	// 	}
+	// }
 
 	body.no-ember .background-container {
 		display: none;
