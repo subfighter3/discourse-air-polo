@@ -1,15 +1,15 @@
 light_background_image:
-  type: string
-  default: default
-  description: Enter image url
+    type: string
+    default: default
+    description: Enter image url
 
 dark_background_image:
-  type: string
-  default: default
-  description: Enter image url
+    type: string
+    default: default
+    description: Enter image url
 
 tile_background: true
 
 no_background_image:
-  default: false
-  description: Disable the background image and tiling settings above.
+    default: false
+    description: Disable the background image and tiling settings above.

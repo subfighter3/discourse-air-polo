@@ -4,7 +4,7 @@
 .custom-search-banner-wrap {
 	margin: 0 auto !important;
 	max-width: unset;
-	color: var(--tertiary);
+	color: var(--secondary);
 	h1 {
 		line-height: var(--line-height-small);
 		@include breakpoint("large", min-width) {
@@ -320,23 +320,25 @@ html {
 	}
 
 	@media (prefers-color-scheme: dark) {
-		@if $dark_background_image != "default" {
-			.background-container {
-				background-image: url($dark_background_image),
-					linear-gradient(
-						90deg,
-						var(--tertiary-hover) 0%,
-						var(--tertiary) 100%
-					);
-			}
-		} @else {
-			.background-container {
-				background-image: url($default-dark-background),
-					linear-gradient(
-						90deg,
-						var(--tertiary-hover) 0%,
-						var(--tertiary) 100%
-					);
+		@if $no-background-image == "false" {
+			@if $dark_background_image != "default" {
+				.background-container {
+					background-image: url($dark_background_image),
+						linear-gradient(
+							90deg,
+							var(--tertiary-hover) 0%,
+							var(--tertiary) 100%
+						);
+				}
+			} @else {
+				.background-container {
+					background-image: url($default-dark-background),
+						linear-gradient(
+							90deg,
+							var(--tertiary-hover) 0%,
+							var(--tertiary) 100%
+						);
+				}
 			}
 		}
 	}
@@ -650,6 +652,18 @@ html body #main-outlet {
 * CUSTOM GLOBAL STYLES
 *
 */
+
+.custom-search-banner-wrap {
+	color: var(--tertiary);
+}
+
+//dark mode
+@media (prefers-color-scheme: dark) {
+	.nav-pills > li > a:hover,
+	.nav-pills > li button:hover {
+		color: var(--secondary);
+	}
+}
 
 // // adjusts margin main content body
 // html body.navigation-categories #main-outlet {
