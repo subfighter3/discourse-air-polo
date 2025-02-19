@@ -305,7 +305,7 @@ html {
 	);
 
 	@if $no-background-image == "false" {
-		@if $light_background_image != "default" {
+		@if $background-image != "default" {
 			.background-container {
 				background-image: url($background-image),
 					linear-gradient(
