@@ -640,14 +640,6 @@ html body #main-outlet {
 	color: var(--tertiary);
 }
 
-//dark mode
-@media (prefers-color-scheme: dark) {
-	.nav-pills > li > a:hover,
-	.nav-pills > li button:hover {
-		color: var(--secondary);
-	}
-}
-
 // // adjusts margin main content body
 // html body.navigation-categories #main-outlet {
 // 	margin-top: unset;

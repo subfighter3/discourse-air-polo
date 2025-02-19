@@ -28,3 +28,10 @@ $default-background-image: dark-light-choose(
 		}
 	}
 }
+
+$nav-pills-hover: dark-light-choose(var(--primary), var(--secondary));
+
+.nav-pills > li > a:hover,
+.nav-pills > li button:hover {
+	color: var(--secondary);
+}
