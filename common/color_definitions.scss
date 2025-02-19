@@ -6,7 +6,6 @@ $default-background-image: dark-light-choose(
 	$default-light-background,
 	$default-dark-background
 );
-$nav-pills-hover: dark-light-choose(var(--primary), var(--secondary));
 
 @if $no-background-image == "false" {
 	@if $background-image != "default" {
@@ -30,7 +29,8 @@ $nav-pills-hover: dark-light-choose(var(--primary), var(--secondary));
 	}
 }
 
-.nav-pills > li > a:hover,
-.nav-pills > li button:hover {
+$nav-pills-hover: dark-light-choose(var(--primary), var(--secondary));
+
+:root {
 	--d-nav-color--hover: $nav-pills-hover;
 }
