@@ -295,45 +295,36 @@ html {
 		}
 	}
 
-	$bg: url(dark-light-choose(
-		$default-light-background,
-		$default-dark-background
-	));
+	// $background-image: dark-light-choose(
+	// 	$light_background_image,
+	// 	$dark_background_image
+	// );
+	// $default-background-image: dark-light-choose(
+	// 	$default-light-background,
+	// 	$default-dark-background
+	// );
 
-	:root {
-		--custom-bg: #{$bg};
-	}
-
-	$background-image: dark-light-choose(
-		$dark_background_image,
-		$light_background_image
-	);
-	$default-background-image: dark-light-choose(
-		$default-dark-background,
-		$default-light-background
-	);
-
-	@if $no-background-image == "false" {
-		@if $background-image != "default" {
-			.background-container {
-				background-image: url($background-image),
-					linear-gradient(
-						90deg,
-						var(--tertiary-hover) 0%,
-						var(--tertiary) 100%
-					);
-			}
-		} @else {
-			.background-container {
-				background-image: $bg,
-					linear-gradient(
-						90deg,
-						var(--tertiary-hover) 0%,
-						var(--tertiary) 100%
-					);
-			}
-		}
-	}
+	// @if $no-background-image == "false" {
+	// 	@if $background-image != "default" {
+	// 		.background-container {
+	// 			background-image: url($background-image),
+	// 				linear-gradient(
+	// 					90deg,
+	// 					var(--tertiary-hover) 0%,
+	// 					var(--tertiary) 100%
+	// 				);
+	// 		}
+	// 	} @else {
+	// 		.background-container {
+	// 			background-image: url($default-background-image),
+	// 				linear-gradient(
+	// 					90deg,
+	// 					var(--tertiary-hover) 0%,
+	// 					var(--tertiary) 100%
+	// 				);
+	// 		}
+	// 	}
+	// }
 
 	// @media (prefers-color-scheme: light) {
 	// 	@if $no-background-image == "false" {
