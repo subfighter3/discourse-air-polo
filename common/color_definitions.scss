@@ -7,23 +7,6 @@ $default-background-image: dark-light-choose(
 	$default-dark-background
 );
 
-$dark-theme-ins: #acf2bd;
-$light-theme-ins: #4da06d;
-
-$ins: dark-light-choose($light-theme-ins, $dark-theme-ins);
-
-:root {
-	--custom-ins: #{$ins};
-}
-
-$nav-pills-light: var(--primary, $primary);
-$nav-pills-dark: var(--secondary, $secondary);
-$nav-pills-hover: dark-light-choose($nav-pills-light, $nav-pills-dark);
-
-:root {
-	--d-nav-color--hover: #{$nav-pills-hover} !important;
-}
-
 @if $no-background-image == "false" {
 	@if $background-image != "default" {
 		.background-container {
@@ -44,4 +27,13 @@ $nav-pills-hover: dark-light-choose($nav-pills-light, $nav-pills-dark);
 				);
 		}
 	}
+}
+
+$nav-pills-light: var(--primary, $primary);
+$nav-pills-dark: var(--secondary, $secondary);
+$nav-pills-hover: dark-light-choose($nav-pills-light, $nav-pills-dark);
+
+.nav-pills > li > a:hover,
+.nav-pills > li button:hover {
+	--d-nav-color--hover: #{$nav-pills-hover};
 }
