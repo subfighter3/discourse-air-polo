@@ -6,16 +6,22 @@ $default-background-image: dark-light-choose(
 	$default-light-background,
 	$default-dark-background
 );
-// $nav-pills-hover: dark-light-choose(
-// 	var(--primary, $primary),
-// 	var(--secondary, $secondary)
-// );
+
+$dark-theme-ins: #acf2bd;
+$light-theme-ins: #4da06d;
+
+$ins: dark-light-choose($light-theme-ins, $dark-theme-ins);
 
 :root {
-	--d-nav-color--hover: dark-light-choose(
-		var(--primary, $primary),
-		var(--secondary, $secondary)
-	) !important;
+	--custom-ins: #{$ins};
+}
+
+$nav-pills-light: var(--primary, $primary);
+$nav-pills-dark: var(--secondary, $secondary);
+$nav-pills-hover: dark-light-choose($nav-pills-light, $nav-pills-dark);
+
+:root {
+	--d-nav-color--hover: #{$nav-pills-hover} !important;
 }
 
 @if $no-background-image == "false" {
