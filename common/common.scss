@@ -4,7 +4,7 @@
 .custom-search-banner-wrap {
 	margin: 0 auto !important;
 	max-width: unset;
-	color: var(--secondary);
+	color: var(--primary);
 	h1 {
 		line-height: var(--line-height-small);
 		@include breakpoint("large", min-width) {
@@ -67,7 +67,7 @@
 .above-main-container-outlet.search-banner {
 	.custom-search-banner-wrap {
 		padding: 1em 0 2em;
-		color: var(--primary);
+		color: var(--tertiary);
 		.mobile-view & {
 			color: var(--secondary);
 		}
@@ -636,9 +636,9 @@ html body #main-outlet {
 *
 */
 
-.custom-search-banner-wrap {
-	color: var(--tertiary);
-}
+// .custom-search-banner-wrap {
+// 	color: var(--tertiary);
+// }
 
 // // adjusts margin main content body
 // html body.navigation-categories #main-outlet {
