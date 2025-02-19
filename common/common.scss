@@ -296,12 +296,12 @@ html {
 	}
 
 	$background-image: dark-light-choose(
-		$light_background_image,
-		$dark_background_image
+		$dark_background_image,
+		$light_background_image
 	);
 	$default-background-image: dark-light-choose(
-		$default-light-background,
-		$default-dark-background
+		$default-dark-background,
+		$default-light-background
 	);
 
 	@if $no-background-image == "false" {
