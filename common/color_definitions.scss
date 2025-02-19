@@ -33,5 +33,5 @@ $nav-pills-hover: dark-light-choose(var(--primary), var(--secondary));
 
 .nav-pills > li > a:hover,
 .nav-pills > li button:hover {
-	color: $nav-pills-hover;
+	--d-nav-color--hover: $nav-pills-hover;
 }
