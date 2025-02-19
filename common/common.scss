@@ -4,7 +4,7 @@
 .custom-search-banner-wrap {
 	margin: 0 auto !important;
 	max-width: unset;
-	color: var(--secondary);
+	color: var(--tertiary);
 	h1 {
 		line-height: var(--line-height-small);
 		@include breakpoint("large", min-width) {
