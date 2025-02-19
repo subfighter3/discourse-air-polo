@@ -295,6 +295,15 @@ html {
 		}
 	}
 
+	$bg: url(dark-light-choose(
+		$default-light-background,
+		$default-dark-background
+	));
+
+	:root {
+		--custom-bg: #{$bg};
+	}
+
 	$background-image: dark-light-choose(
 		$dark_background_image,
 		$light_background_image
@@ -316,7 +325,7 @@ html {
 			}
 		} @else {
 			.background-container {
-				background-image: url($default-background-image),
+				background-image: $bg,
 					linear-gradient(
 						90deg,
 						var(--tertiary-hover) 0%,
