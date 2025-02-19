@@ -6,8 +6,7 @@ $default-background-image: dark-light-choose(
 	$default-light-background,
 	$default-dark-background
 );
-
-$nav-pills-hover: dark-light-choose(var(--primary), var(--secondary));
+$nav-pills-hover: dark-light-choose($primary, $secondary);
 
 :root {
 	--d-nav-color--hover: $nav-pills-hover;
