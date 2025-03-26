@@ -690,22 +690,30 @@ html body #main-outlet {
 *
 */
 
-.sidebar-section-link-wrapper .sidebar-section-link.active {
-	background: var(--tertiary-med-or-tertiary);
-	color: var(---primary);
-}
+// .sidebar-section-link-wrapper .sidebar-section-link.active {
+// 	background: var(--tertiary-med-or-tertiary);
+// 	color: var(---primary);
+// }
 
-.sidebar-section-link-wrapper .sidebar-section-link.active .sidebar-section-link-prefix.icon {
-	color: var(--primary);
-}
+// .sidebar-section-link-wrapper .sidebar-section-link.active .sidebar-section-link-prefix.icon {
+// 	color: var(--primary);
+// }
 
-.nav-stacked a.active {
-	background-color: var(--tertiary-med-or-tertiary);
-}
+// .nav-stacked a.active {
+// 	background-color: var(--tertiary-med-or-tertiary);
+// }
 
-.fk-d-menu-modal.list-control-toggle-link-content .dropdown-menu a.active {
-    background: ar(--tertiary-med-or-tertiary) !important;
-}
+// .fk-d-menu-modal.list-control-toggle-link-content .dropdown-menu a.active {
+// 	background: ar(--tertiary-med-or-tertiary) !important;
+// }
+
+// .user-menu.revamped .tabs-list .btn.active,
+// .user-menu.revamped .tabs-list .d-modal.json-schema-editor-modal .je-ready .active.json-editor-btn-add,
+// .d-modal.json-schema-editor-modal .je-ready .user-menu.revamped .tabs-list .active.json-editor-btn-add,
+// .user-menu.revamped .tabs-list .d-modal.json-schema-editor-modal .je-ready button.active,
+// .d-modal.json-schema-editor-modal .je-ready .user-menu.revamped .tabs-list button.active {
+// 	background-color: var(--tertiary-low-or-tertiary-high) !important;
+// }
 
 // .custom-search-banner-wrap {
 //   color: var(--tertiary);
