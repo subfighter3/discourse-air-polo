@@ -692,6 +692,19 @@ html body #main-outlet {
 *
 */
 
+.sidebar-section-link-wrapper .sidebar-section-link.active {
+    background: var(--tertiary-med-or-tertiary);
+    color: var(---primary);
+}
+
+.sidebar-section-link-wrapper .sidebar-section-link.active .sidebar-section-link-prefix.icon {
+    color: var(--primary);
+}
+
+.nav-stacked a.active {
+    background-color: var(--tertiary-med-or-tertiary);
+}
+
 // .custom-search-banner-wrap {
 //   color: var(--tertiary);
 // }
