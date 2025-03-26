@@ -23,8 +23,8 @@
 			"danger": "D05454",
 			"success": "71BD9F",
 			"love": "C16AD7",
-			"selected": "1c1c1c",
-			"hover": "c6a3ff"
+			"selected": "701af9",
+			"hover": "483762"
 		},
 		"Air Polo Dark": {
 			"primary": "E0E0E0",
@@ -37,8 +37,8 @@
 			"danger": "D05454",
 			"success": "71BD9F",
 			"love": "C16AD7",
-			"selected": "1c1c1c",
-			"hover": "c6a3ff"
+			"selected": "701af9",
+			"hover": "483762"
 		}
 	},
 	"components": [
