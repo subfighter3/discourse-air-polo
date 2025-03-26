@@ -722,7 +722,7 @@ html body.user-messages-page #main-outlet,
 html body.user-notifications-page #main-outlet,
 html body.user-badges-page #main-outlet,
 html body.staff:not(.navigation-topics) #main-outlet {
-	background-color: transparent;
+	background-color: transparent !important;
 }
 
 .fk-d-menu-modal.list-control-toggle-link-content .dropdown-menu a.active {
