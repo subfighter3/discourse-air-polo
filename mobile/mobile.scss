@@ -80,8 +80,12 @@ html body.staff:not(.navigation-topics) #main-outlet {
 
 html body.categories-list #main-outlet {
 	padding: 0.5em;
-	width: calc(100% - 1em) !important;
 	background-color: unset !important;
+}
+
+html body.categories-list #main-outlet,
+html body.navigation-category #main-outlet {
+	width: calc(100% - 1em) !important;
 }
 
 #list-area {
