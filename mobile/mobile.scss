@@ -84,6 +84,11 @@ html body.staff:not(.navigation-topics) #main-outlet {
 	width: calc(100% - 1em);
 }
 
+html body.archetype-regular #main-outlet,
+html body.archetype-private_message #main-outlet {
+	width: calc(100% - 3em);
+}
+
 #list-area {
 	margin-bottom: 0;
 }
