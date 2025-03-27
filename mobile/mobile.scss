@@ -42,6 +42,12 @@ html
 html body.categories-list #main-outlet {
 	padding: 0.5em;
 	width: calc(100% - 1em) !important;
+	background-color: unset !important;
+}
+
+html body.categories-list #navigation-bar,
+.navigation-controls {
+	margin-bottom: 0 !important;
 }
 
 #main-outlet {
