@@ -35,13 +35,15 @@ html
 	#main-outlet {
 	background-color: transparent;
 	box-shadow: none;
-	// padding: 0 0.5em 1em 0.5em;
+	padding: 0 0.5em 1em 0.5em;
 	width: calc(100% - 1em);
 }
 
-// .container.posts {
-//   grid-template-columns: 50% 50%;
-// }
+html
+  body.categories-list
+	#main-outlet {
+	padding: 0;
+}
 
 #main-outlet {
 	margin-inline: auto;
@@ -81,10 +83,6 @@ html body.staff:not(.navigation-topics) #main-outlet {
 	max-width: calc(100vw - 1.5em);
 }
 
-// html body.archetype-private_message .container.posts {
-//   grid-template-columns: 50% 50%;
-// }
-
 .navigation-categories .navigation-container,
 .categories-list .navigation-container {
 	border-bottom: 0 !important;
@@ -93,7 +91,7 @@ html body.staff:not(.navigation-topics) #main-outlet {
 body.category .category-breadcrumb .select-kit-header,
 #navigation-bar,
 .navigation-controls {
-	margin-bottom: 0 !important;
+  margin-bottom: 0.5em !important;
 }
 
 body.category .navigation-categories .list-container,
