@@ -86,7 +86,7 @@ html body.staff:not(.navigation-topics) #main-outlet {
 
 html body.archetype-regular #main-outlet,
 html body.archetype-private_message #main-outlet {
-	width: calc(100% - 3em);
+	width: calc(100% - 3em) !important;
 }
 
 #list-area {
