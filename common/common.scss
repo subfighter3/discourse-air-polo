@@ -705,7 +705,7 @@ html body #main-outlet {
 
 // disable welcome banner title and avoid top padding
 .welcome-banner__wrap {
-	padding-top: 0;
+	padding-top: 1em;
 }
 
 .welcome-banner__title {
