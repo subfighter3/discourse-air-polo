@@ -1,6 +1,7 @@
 @import "chat-mobile";
 
 .custom-search-banner-wrap {
+	.custom-search-banner-headline,
 	h1 {
 		font-size: 2.5em !important;
 	}
@@ -135,7 +136,7 @@ ol.category-breadcrumb {
 	}
 	.drop {
 		border-radius: 8px;
-		box-shadow: 0 0 12px rgba(0, 0, 0, 0.25);
+		box-shadow: 0 0 12px rgb(0, 0, 0, 0.25);
 		top: calc(100% + 0.5em);
 	}
 }
@@ -177,9 +178,9 @@ ol.category-breadcrumb {
 
 .fps-result {
 	background: var(--secondary);
-	border: 1px solid rgba(var(--primary-rgb), 0.1);
+	border: 1px solid rgb(var(--primary-rgb), 0.1);
 	border-radius: 8px;
-	box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+	box-shadow: 0 0 8px rgb(0, 0, 0, 0.05);
 	margin-bottom: 0.5em;
 	padding: 1em;
 }
@@ -198,9 +199,9 @@ ol.category-breadcrumb {
 
 .full-width .contents .topic-list .topic-list-header tr {
 	background-color: var(--secondary);
-	border: 1px solid rgba(var(--primary-rgb), 0.1);
+	border: 1px solid rgb(var(--primary-rgb), 0.1);
 	border-radius: 8px;
-	box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+	box-shadow: 0 0 8px rgb(0, 0, 0, 0.05);
 	margin-bottom: 1em;
 }
 
@@ -320,26 +321,26 @@ ol.category-breadcrumb {
 */
 
 // .custom-search-banner-wrap {
-// 	padding: 1.5em 8px;paddingpaddingpadding
+// 	padding: 1.5em 8px;paddingpaddingpaddingpaddingpadding
 // }
 
 // // disable max 2 lines of text for cat descriptions
 // .custom-category-boxes .description {
-// 	overflow: unset;overflowoverflowoverflow
-// 	text-overflow: unset;text-overflowtext-overflowtext-overflow
-// 	display: initial;displaydisplaydisplay
-// 	-webkit-line-clamp: unset;-webkit-line-clamp-webkit-line-clamp-webkit-line-clamp
-// 	-webkit-box-orient: unset;-webkit-box-orient-webkit-box-orient-webkit-box-orient
+// 	overflow: unset;overflowoverflowoverflowoverflowoverflow
+// 	text-overflow: unset;text-overflowtext-overflowtext-overflowtext-overflowtext-overflow
+// 	display: initial;displaydisplaydisplaydisplaydisplay
+// 	-webkit-line-clamp: unset;-webkit-line-clamp-webkit-line-clamp-webkit-line-clamp-webkit-line-clamp-webkit-line-clamp
+// 	-webkit-box-orient: unset;-webkit-box-orient-webkit-box-orient-webkit-box-orient-webkit-box-orient-webkit-box-orient
 // }
 
 // .user-main .about.collapsed-info .details {
-// 	background: unset;backgroundbackgroundbackground
+// 	background: unset;backgroundbackgroundbackgroundbackgroundbackground
 // }
 
 // // disable background on search results page
 // .user-notifications-page .background-container,
 // .search-page .background-container {
-// 	background-image: unset;background-imagebackground-imagebackground-image
+// 	background-image: unset;background-imagebackground-imagebackground-imagebackground-imagebackground-image
 // }
 
 // fixes img max-width
@@ -363,13 +364,13 @@ ol.category-breadcrumb {
 }
 
 // .d-editor-button-bar::after {
-//   width: var(--space-3);widthwidthwidth
-//   background: linear-gradient(to left, var(--primary-low), transparent 100%);backgroundbackgroundbackground
-//   right: 0;rightrightright
-//   height: 100%;heightheightheight
-//   display: block;displaydisplaydisplay
-//   position: absolute;positionpositionposition
-//   top: 0;toptoptop
+//   width: var(--space-3);widthwidthwidthwidthwidth
+//   background: linear-gradient(to left, var(--primary-low), transparent 100%);backgroundbackgroundbackgroundbackgroundbackground
+//   right: 0;rightrightrightrightright
+//   height: 100%;heightheightheightheightheight
+//   display: block;displaydisplaydisplaydisplaydisplay
+//   position: absolute;positionpositionpositionpositionposition
+//   top: 0;toptoptoptoptop
 // }
 
 .d-editor-textarea-wrapper::before {
