@@ -320,26 +320,26 @@ ol.category-breadcrumb {
 */
 
 // .custom-search-banner-wrap {
-// 	padding: 1.5em 8px;padding
+// 	padding: 1.5em 8px;paddingpaddingpadding
 // }
 
 // // disable max 2 lines of text for cat descriptions
 // .custom-category-boxes .description {
-// 	overflow: unset;overflow
-// 	text-overflow: unset;text-overflow
-// 	display: initial;display
-// 	-webkit-line-clamp: unset;-webkit-line-clamp
-// 	-webkit-box-orient: unset;-webkit-box-orient
+// 	overflow: unset;overflowoverflowoverflow
+// 	text-overflow: unset;text-overflowtext-overflowtext-overflow
+// 	display: initial;displaydisplaydisplay
+// 	-webkit-line-clamp: unset;-webkit-line-clamp-webkit-line-clamp-webkit-line-clamp
+// 	-webkit-box-orient: unset;-webkit-box-orient-webkit-box-orient-webkit-box-orient
 // }
 
 // .user-main .about.collapsed-info .details {
-// 	background: unset;background
+// 	background: unset;backgroundbackgroundbackground
 // }
 
 // // disable background on search results page
 // .user-notifications-page .background-container,
 // .search-page .background-container {
-// 	background-image: unset;background-image
+// 	background-image: unset;background-imagebackground-imagebackground-image
 // }
 
 // fixes img max-width
@@ -355,25 +355,31 @@ ol.category-breadcrumb {
 
 .d-editor-button-bar .btn.options {
 	order: -1;
+	margin-left: var(--space-2);
+}
+
+.d-editor-button-bar .composer-toggle-switch {
+	margin-left: unset;
 }
 
 // .d-editor-button-bar::after {
-//   width: var(--space-3);width
-//   background: linear-gradient(to left, var(--primary-low), transparent 100%);background
-//   right: 0;right
-//   height: 100%;height
-//   display: block;display
-//   position: absolute;position
-//   top: 0;top
+//   width: var(--space-3);widthwidthwidth
+//   background: linear-gradient(to left, var(--primary-low), transparent 100%);backgroundbackgroundbackground
+//   right: 0;rightrightright
+//   height: 100%;heightheightheight
+//   display: block;displaydisplaydisplay
+//   position: absolute;positionpositionposition
+//   top: 0;toptoptop
 // }
 
 .d-editor-textarea-wrapper::before {
 	content: "";
-	width: var(--space-6);
+	width: var(--space-10);
 	background: linear-gradient(to left, var(--primary-low), transparent 100%);
-	right: 0;
+	right: 0px;
 	height: 39px;
 	display: block;
 	position: absolute;
 	top: 0.25rem;
+	mix-blend-mode: multiply;
 }
